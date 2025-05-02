@@ -22,7 +22,7 @@ export default function Home() {
         <li>🔥 <strong>Pro</strong> – meta, gdzie liczy się cień słupa, krzaki przy drodze i kod pocztowy na śmietniku</li>
     </ul>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <Beginner/>
+        <Beginner href="/easy"/>
         <Intermediate />
         <Pro />
     </div>
