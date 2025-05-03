@@ -6,6 +6,8 @@ export default function Header(){
                 <a href="/">
                     <Image src="/logo.png" alt="Logo" width={200} height={50} />
                 </a>
+                <a href="/dialsearch" className="text-blue-500 hover:text-blue-700 font-semibold">
+                    Dial Search</a>
             </div>
         </header>
     )

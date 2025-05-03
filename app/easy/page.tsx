@@ -16,7 +16,7 @@ export default function EasyPage() {
         .eq("level", "beginner");
 
       if (error) {
-        console.error("Błąd pobierania tipów:", error.message);
+        console.error(error.message);
       } else {
         setTips(data);
       }
