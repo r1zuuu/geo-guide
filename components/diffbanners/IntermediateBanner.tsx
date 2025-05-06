@@ -1,5 +1,7 @@
+import Link from "next/link";
 export default function Intermediate() {
     return (
+    <Link href="/intermediate">
         <div
             className="relative rounded-lg shadow-md overflow-hidden cursor-pointer transform transition duration-300 hover:scale-105"
             style={{
@@ -12,5 +14,6 @@ export default function Intermediate() {
                 <h2 className="text-xl font-bold">Intermediate</h2>
             </div>
         </div>
+    </Link>
     );
 }

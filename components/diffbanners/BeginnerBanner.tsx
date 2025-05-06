@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Beginner() {
     return (
-        <Link href="/easy">
+        <Link href="/beginner">
             <div
                 className="relative rounded-lg shadow-md overflow-hidden cursor-pointer transform transition duration-300 hover:scale-105"
                 style={{

@@ -1,8 +1,6 @@
 import Beginner from "@/components/diffbanners/BeginnerBanner";
 import Intermediate from "@/components/diffbanners/IntermediateBanner";
 import Pro from "@/components/diffbanners/ProBanner";
-import Image from "next/image";
-
 export default function Home() {
   return (
     <main className="max-w-6xl mx-auto px-4 py-8 text-black">
@@ -22,9 +20,9 @@ export default function Home() {
         <li>🔥 <strong>Pro</strong> – meta, gdzie liczy się cień słupa, krzaki przy drodze i kod pocztowy na śmietniku</li>
     </ul>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <Beginner href="/easy"/>
-        <Intermediate />
-        <Pro />
+        <Beginner link="/beginner" />
+        <Intermediate link="/intermediate/" />
+        <Pro link="/pro/" />
     </div>
   </main>
   );

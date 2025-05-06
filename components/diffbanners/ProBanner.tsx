@@ -1,6 +1,8 @@
+import Link from "next/link";
 
 export default function Pro() {
     return (
+        <Link href="/pro">
         <div
             className="relative rounded-lg shadow-md overflow-hidden cursor-pointer transform transition duration-300 hover:scale-105"
             style={{
@@ -13,5 +15,6 @@ export default function Pro() {
                 <h2 className="text-xl font-bold">Pro</h2>
             </div>
         </div>
+        </Link>
     );
 }
