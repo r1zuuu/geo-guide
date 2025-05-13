@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 
-// Dynamiczny import Client.jsx
 const MapClient = dynamic(() => import("./Client"), { ssr: false });
 
 const filters = {
@@ -17,7 +16,9 @@ export default function MapPage() {
   const [activeFilter, setActiveFilter] = useState("");
 
   useEffect(() => {
-    fetch("https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json")
+    fetch(
+      "https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json"
+    )
       .then((res) => res.json())
       .then((data) => setGeoData(data));
   }, []);
@@ -35,13 +36,11 @@ export default function MapPage() {
 
   return (
     <div className="w-full h-screen">
-      <div className="flex gap-2 p-2">
-        <button onClick={() => setActiveFilter("yellow")}>Żółte tablice</button>
-        <button onClick={() => setActiveFilter("left")}>Lewa strona jazdy</button>
-        <button onClick={() => setActiveFilter("streetview")}>Street View</button>
-        <button onClick={() => setActiveFilter("")}>Resetuj</button>
-      </div>
-      <MapClient geoData={geoData} getCountryStyle={getCountryStyle} activeFilter={activeFilter} />
+      <MapClient
+        geoData={geoData}
+        getCountryStyle={getCountryStyle}
+        activeFilter={activeFilter}
+      />
     </div>
   );
 }
