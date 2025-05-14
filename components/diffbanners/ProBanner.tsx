@@ -3,9 +3,10 @@ import Link from "next/link";
 interface ProBannerProps {
   link: string;
 }
+
 export default function Pro({ link }: ProBannerProps) {
   return (
-    <Link href="/pro">
+    <Link href={link}>
       <div
         className="relative rounded-lg shadow-md overflow-hidden cursor-pointer transform transition duration-300 hover:scale-105"
         style={{

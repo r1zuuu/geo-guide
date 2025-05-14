@@ -6,7 +6,7 @@ interface BeginnerBannerProps {
 
 export default function Beginner({ link }: BeginnerBannerProps) {
   return (
-    <Link href="/beginner">
+    <Link href={link}>
       <div
         className="relative rounded-lg shadow-md overflow-hidden cursor-pointer transform transition duration-300 hover:scale-105"
         style={{

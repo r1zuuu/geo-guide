@@ -3,9 +3,10 @@ import Link from "next/link";
 interface IntermediateBannerProps {
   link: string;
 }
+
 export default function Intermediate({ link }: IntermediateBannerProps) {
   return (
-    <Link href="/intermediate">
+    <Link href={link}>
       <div
         className="relative rounded-lg shadow-md overflow-hidden cursor-pointer transform transition duration-300 hover:scale-105"
         style={{
