@@ -37,35 +37,37 @@ export default function Home() {
       <div className="mb-10 mt-10 text-black font-semibold text-3xl text-center flex flex-col items-center space-y-6">
         <p>A na początek może?</p>
 
-        <Link href="/license-plates">
-          <div
-            className="relative rounded-lg shadow-md overflow-hidden cursor-pointer transform transition duration-100 hover:scale-105 w-100 p-5"
-            style={{
-              backgroundImage: "url('/tablica.jpg')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-            <div className="relative p-6 text-white text-center">
-              <h2 className="text-xl font-bold">Tablice rejestracyjne</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+          <Link href="/license-plates">
+            <div
+              className="relative rounded-lg shadow-md overflow-hidden cursor-pointer transform transition duration-100 hover:scale-105 w-full h-64"
+              style={{
+          backgroundImage: "url('/tablica.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+              }}
+            >
+              <div className="relative p-6 text-white text-center">
+          <h2 className="text-2xl font-bold">Tablice rejestracyjne</h2>
+              </div>
             </div>
-          </div>
-        </Link>
+          </Link>
 
-        <Link href="/direction">
-          <div
-            className="relative rounded-lg shadow-md overflow-hidden cursor-pointer transform transition duration-100 hover:scale-105 w-100 p-5"
-            style={{
-              backgroundImage : "url('/car.webp')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-            <div className="relative p-6 text-white text-center">
-              <h2 className="text-xl font-bold text-black">Ruch lewo i prawo stronny</h2>
+          <Link href="/direction">
+            <div
+              className="relative rounded-lg shadow-md overflow-hidden cursor-pointer transform transition duration-100 hover:scale-105 w-full h-64"
+              style={{
+          backgroundImage: "url('/car.webp')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+              }}
+            >
+              <div className="relative p-6 text-white text-center">
+          <h2 className="text-2xl font-bold text-black">Ruch lewo i prawo stronny</h2>
+              </div>
             </div>
-          </div>
-        </Link>
+          </Link>
+        </div>
       </div>
     </main>
   );
