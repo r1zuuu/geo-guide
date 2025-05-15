@@ -40,7 +40,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
           <Link href="/license-plates">
             <div
-              className="relative rounded-lg shadow-md overflow-hidden cursor-pointer transform transition duration-100 hover:scale-105 w-full h-64"
+              className="relative rounded-lg shadow-md overflow-hidden cursor-pointer transform transition duration-100 hover:scale-105 w-full h-64 text-center"
               style={{
           backgroundImage: "url('/tablica.jpg')",
           backgroundSize: "cover",
@@ -55,7 +55,7 @@ export default function Home() {
 
           <Link href="/direction">
             <div
-              className="relative rounded-lg shadow-md overflow-hidden cursor-pointer transform transition duration-100 hover:scale-105 w-full h-64"
+              className="relative rounded-lg shadow-md overflow-hidden cursor-pointer transform transition duration-100 hover:scale-105 w-full h-64 text-center"
               style={{
           backgroundImage: "url('/car.webp')",
           backgroundSize: "cover",
