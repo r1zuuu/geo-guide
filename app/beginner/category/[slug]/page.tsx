@@ -40,6 +40,7 @@ export default function CategoryPage() {
 
   return (
     <main className="p-6 max-w-3xl mx-auto">
+      <a>GOWNO</a>
       <h1 className="text-3xl font-bold mb-6">🌍 Poziom Beginner</h1>
       <div className="space-y-4">
         {tips.map((tip) => (
