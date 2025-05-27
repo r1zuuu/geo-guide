@@ -73,7 +73,7 @@ export default function CategoryPage() {
                 <img
                   src={tip.image_url}
                   alt={tip.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
             )}
