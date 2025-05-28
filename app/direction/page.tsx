@@ -33,7 +33,6 @@ export default function DirectionPage() {
                     className="cursor-grab"
                     style={{
                         transform: `scale(${scale}) translate(${translateX}px, ${translateY}px)`,
-                        transition: "transform 0.2s ease",
                     }}
                 >
                     <Image

@@ -30,7 +30,6 @@ export default function RegisterPlatesPage() {
                     onMouseMove={handleDrag}
                     style={{
                         transform: `scale(${scale}) translate(${translateX}px, ${translateY}px)`,
-                        transition: "transform 0.2s ease",
                     }}
                 >
                     <img
