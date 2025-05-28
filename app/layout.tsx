@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Geotips App",
+  title: "Geo Guide",
   description: "Use it to learn geoguessr",
 };
 
